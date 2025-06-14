@@ -7,26 +7,28 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <h1>WhatsUnban</h1>
-    <p>ඔබේ WhatsApp banned number එක unban කරන්න request එකක් යවන්න</p>
-    <form id="unbanForm">
-      <label for="phoneNumber">Banned Phone Number (උදා: +94XXXXXXXXX):</label>
-      <input type="text" id="phoneNumber" placeholder="+94XXXXXXXXX" required pattern="\+94[0-9]{9}">
-      <label for="reason">Ban වුණ හේතුව (Optional):</label>
-      <select id="reason">
-        <option value="">Select Reason</option>
-        <option value="third-party">Third-Party App Usage</option>
-        <option value="bulk">Bulk Messaging</option>
-        <option value="other">Other</option>
-      </select>
-      <button type="submit">Submit Request</button>
-    </form>
-    <div id="confirmation" style="display: none;">
-      <h2>Request Submitted!</h2>
-      <p>Your unban request for <span id="userNumber"></span> has been sent to WhatsApp Support. You'll hear back within 24-48 hours.</p>
+  <div class="background">
+    <div class="container">
+      <h1>RIKA-TEACH WhatsUnban</h1>
+      <p class="subtitle">ඔබේ WhatsApp banned number එක unban කරන්න request එකක් යවන්න</p>
+      <form id="unbanForm">
+        <label for="phoneNumber">Banned Phone Number (උදා: +94XXXXXXXXX):</label>
+        <input type="text" id="phoneNumber" placeholder="+94XXXXXXXXX" required pattern="\+94[0-9]{9}">
+        <label for="reason">Ban වුණ හේතුව (Optional):</label>
+        <select id="reason">
+          <option value="">හේතුව තෝරන්න</option>
+          <option value="third-party">Third-Party App භාවිතය</option>
+          <option value="bulk">Bulk Messaging</option>
+          <option value="other">වෙනත්</option>
+        </select>
+        <button type="submit">Submit Request</button>
+      </form>
+      <div id="confirmation" style="display: none;">
+        <h2>Request එක යැව්වා!</h2>
+        <p>Your unban request for <span id="userNumber"></span> has been sent to WhatsApp Support. You'll hear back within 24-48 hours.</p>
+      </div>
     </div>
   </div>
   <script src="script.js"></script>
 </body>
-  </html>
+</html>
