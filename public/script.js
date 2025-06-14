@@ -15,9 +15,9 @@ document.getElementById("unbanForm").addEventListener("submit", async (e) => {
       document.getElementById("confirmation").style.display = "block";
       document.getElementById("userNumber").textContent = phoneNumber;
     } else {
-      alert(result.message || "Error sending request.");
+      alert(result.message || "Request එක යවන්න බැරි වෙන්නෙ නෑ.😓🐉");
     }
   } catch (error) {
-    alert("Error connecting to server. Try again later.");
+    alert("Server එකට connect වෙන්න බැරි වෙන්නෙ නෑ. ආයෙ උත්සාහ කරපන් 😒🎈.");
   }
 });
